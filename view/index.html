@@ -7,240 +7,202 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
-
+    <!-- <link rel="stylesheet" href="/style/debugger.css"> -->
+    <link rel="stylesheet" href="/style/main.css"> 
 
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
   <body>
-
-    <br>
-    <br>
-
-    <div class = "container">
-      <div class = "columns">
-        <!-- LOGO -->
-        <div class = "column is-one-fifth">
-          <img src = "../logos/CVCHRD logo.png" width="90%" height="90%">
-        </div>
-        <div class = "column is-gapless">
-          <p class = "title is-3"> CVCHRD </p>
-          <p class = "subtitle is-6"> Central Visayas Consortium for Health Research and Development </p>
-          <!-- NAVIGATION BAR -->
-          <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-              <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
+    <!-- START OF NAVBAR-->
+      <nav class="navbar mainColor" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+              <a href="/">
+                  <img src = "../logos/CVCHRD logo.png" width="100" height="100">
               </a>
-            </div>
-              
-            <div id="navbarBasicExample" class="navbar-menu">
-              <div class="navbar-start">
-                <a class="navbar-item" href="../view/index.html">
-                  Home
-                </a>
-              
-                <div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link">
-                    About Us
-                  </a>
-                  <div class="navbar-dropdown">
-                    <a class="navbar-item" href="../view/aboutpage/history.html">
-                      History of CVCHRD
-                    </a>
-                    <a class="navbar-item" href="../view/aboutpage/orgchart.html">
-                      Organizational Chart
-                    </a>
-                    <a class="navbar-item" href="../view/aboutpage/NDO.html">
-                      Name, Domicile, and Objectives
-                    </a>
-                    <a class="navbar-item" href="../view/aboutpage/memberInt.html">
-                      Member Institutions
-                    </a>
-                  </div>
-                </div>
-          
-                <a class="navbar-item" href="../view/gallery.html">
-                  Gallery
-                </a>
-              
-                <a class="navbar-item" href="../view/downloads.html">
-                  Downloads
-                </a>
-              
-                <a class="navbar-item" href="../view/discussion.html">
-                  Discussions
-                </a>
+              <div class="column">
+                  <p class="has-text-white font">CVCHRD</p>
+                  <p class="has-text-white ">Central Visayas Consurtiom for</p>  
+                  <p class="has-text-white">Health Research And Development</p>  
               </div>
-            </div>
-          </nav>
-          <hr>
-        </div>
-        <!-- Search Box -->
-        <div class = "column is-one-quarter">
-          <input class="input is-info is-rounded is-short" type="text" placeholder="Search ...">
-        </div>
+          </div>
 
-        <div class = "column is-gapless">
-            <input class="button is-info is-rounded is-right" type="submit" value="Search">
-        </div>
-      </div>
-    </div>
+          <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-end">
+                  <a href="../view/index.html" class="navbar-item has-text-white ">Home</a>
+                  <div class="navbar-item has-dropdown is-hoverable ">
+                          <a class="navbar-link has-text-white ">
+                              About Us
+                          </a>
+                      <div class="navbar-dropdown">
+                          <a class="navbar-item" href="../view/aboutpage/history.html">
+                              History of CVCHRD
+                          </a>
+                          <a class="navbar-item" href="../view/aboutpage/orgchart.html">
+                              Organizational Chart
+                          </a>
+                          <a class="navbar-item" href="../view/aboutpage/NDO.html">
+                              Name, Domicile, and Objectives
+                          </a>
+                          <a class="navbar-item" href="../view/aboutpage/memberInt.html">
+                              Member Institutions
+                          </a>
+                      </div>
+                  </div>
+                  <a href="../view/gallery.html" class="navbar-item has-text-white">Gallery</a>
+                  <a href="../view/gallery.html" class="navbar-item has-text-white">Downloads</a>
+                  <a href="../view/discussion.html" class="navbar-item has-text-white">Discussion</a>
+                  <a>
+                      <div class="navbar-item">
+                          <div class="control">
+                              <input class="input is-rounded" type="text" placeholder="Find a repository">
+                          </div>
+                          <div class="control">
+                              <a class="button is-info is-rounded">
+                              Search
+                              </a>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+      </nav>
+      <!--END OF NAVBAR-->
 
-    <div class = "container">
-      <strong> Carousel </strong>
-    </div>
+      <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-one-third">
+                  <article class="media">
+                    <figure class="media-left">
+                        <i class="fas fa-globe-asia icon is-large"></i>
+                    </figure>
+                   <div class="media-content">
+                     <div class="content">
+                       <p class="is-size-4">Regional Health Research Development Committee</p>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                     </div>
+                   </div>
+                  </article>
+                </div>
+              </div>
+        </div>
+        </section>
+      <div class="container">
+        <!--START OF NEWS-->
+          <div class = "container has-text-centered is-size-5 headerpadd">
+                  <strong>  OUR LATEST NEWS </strong>
+          </div>
+          <br>
+
+          <div class="columns">
+              <div class="column is-one-third">
+                      <div class="card">
+                              <div class="card-image">
+                                <figure class="image is-4by3">
+                                  <img src="https://images.unsplash.com/photo-1546659934-038aab8f3f3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=817&q=80" alt="Placeholder image">
+                                </figure>
+                              </div>
+                              <div class="card-content">
+                                <p class="title is-4 titleColor">John Smith</p>
+                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                <br>
+                                <div class="content">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                  Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                  
+                                </div>
+                              </div>
+                      </div>
+              </div>
+              <div class="column is-one-third">
+                      <div class="card">
+                              <div class="card-image">
+                                <figure class="image is-4by3">
+                                  <img src="https://images.unsplash.com/photo-1486218119243-13883505764c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80" alt="Placeholder image">
+                                </figure>
+                              </div>
+                              <div class="card-content">
+                                  <p class="title is-4 titleColor">John Smith</p>
+                                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                  <br>
+                                <div class="content">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                  Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                  <a href="#">#css</a> <a href="#">#responsive</a>
+                                </div>
+                              </div>
+                      </div>
+              </div>
+              <div class="column is-one-third">
+                      <div class="card">
+                              <div class="card-image">
+                                <figure class="image is-4by3">
+                                  <img src="https://images.unsplash.com/photo-1549890762-0a3f8933bc76?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1435&q=80" alt="Placeholder image">
+                                </figure>
+                              </div>
+                              <div class="card-content">
+                                  <p class="title is-4 titleColor">John Smith</p>
+                                  <p>11:09 PM - 1 Jan 2016</p>
+                                <div class="content">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                  Phasellus nec iaculis mauris. <a>@bulmaio</a>
+                                </div>
+                              </div>
+                      </div>
+              </div>
+          </div>
+  </div>
+  <br>
+
+  <!--END OF NEWS-->
+
+
+  <!--START OF FOOTER-->
+    <footer class="footer mainColor">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-one-third">
+                  <p class="is-size-4 has-text-white has-text-weight-bold font">Recieve Update</p>
+                  <br>
+                  <div class="field">
+                      <label class="label">Name</label>
+                      <div class="control">
+                        <input class="input" type="text" placeholder="e.g Alex Smith">
+                      </div>
+                    </div>
     
-    <hr>
-    <div class = "container">
-      <strong> CVCHRD AT A GLANCE </strong>
-    </div>
-
-    <hr>
-
-    <div class = "container">
-      <strong> Our Latest News </strong>
-    </div>
-      
-    <hr>
-
-    <div class="container">
-      <div class = "columns">
-        <div class = "column">
-          <strong> Contact Details </strong>
-          <br>
-          <br>
-          <div class = "columns">
-            <img src = "../icons/locationcopy.jpg" width="10%" height="10%">
-            <pre>Lahug S & T Complex, Sudlon, Lahug, Cebu City</pre>
-          </div>
-
-          <br>
-
-          <div class = "columns">
-            <img src = "../icons/gettyimages-976146730-1024x1024.jpg" width="10%" height="10%">
-            <pre>(032) 418 - 9032 / 254 - 8269</pre>
-          </div>
-
-          <br>
-
-          <div class = "columns">
-            <img src = "../icons/584856bce0bb315b0f7675ad.png" width="10%" height="10%"> 
-            <pre>cvchrd7@gmail.com</pre>
-            </div>
+                    <div class="field">
+                      <label class="label">Email</label>
+                      <div class="control">
+                        <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+                      </div>
+                    </div>
+                    <div class="control">
+                        <button class="button is-link">Submit</button>
+                      </div>
+                </div>
+                <div class="column is-4 is-offset-3">
+                    <p class="is-size-4 has-text-white has-text-weight-bold font">Contact Details</p>
+                    <br>
+                    <br>
+                    <p><i class="fas fa-map-marker-alt has-text-white icon is-medium"></i>  Lahug S & T Complex. Sudlon, Lahug, Cebu City</p>
+                    <p> <i class="fas fa-phone has-text-white icon is-medium"></i>  (032) 418 - 9032 / 254 - 8269</p>
+                    <p><i class="fas fa-envelope-square has-text-white icon is-medium"></i>  cvchrd7@gmail.com</p>
+                    <br>
+                    <div class="field is-grouped">
+                        <div class="control">
+                            <i class="fab fa-facebook-square has-text-white icon is-medium"></i>
+                        </div>
+                        <div class="control">
+                            <i class="fab fa-twitter-square has-text-white icon is-medium"></i>
+                        </div>
+                        <div class="control">
+                            <i class="fab fa-linkedin has-text-white icon is-medium"></i>
+                        </div>
+                      </div>
+                    </div>
+              </div>
         </div>
-
-        <div class = "column">
-          <strong> Receive Updates </strong>
-          <br>
-          <br>
-          <div class="field">
-            <div class="control">
-              <input class="input is-info" type="text" placeholder="Name">
-            </div>
-          </div>
-
-          <div class="field">
-            <div class="control">
-              <input class="input is-info" type="email" placeholder="Email Address">
-            </div>
-          </div>
-          <a href = "#">
-            <button class  = "button is-info"> Subscribe </button>
-          </a>
-          <!-- <input class="button is-info" type="submit" value="Subscribe"> -->
-        </div>
-      </div>
-    </div>
-
-    <br>
-
-    <footer class="footer">
-      <div class = "content has-text-centered">
-        <strong>
-          Affiliated Research Sites
-        </strong>
-        <br>
-        <br>
-        <a href="#">
-          <img src="../logos/mmhrdc.png" width="5%" height="5%">
-        </a>
-        
-        <a href="#">
-          <img src="../logos/caragarhrdc.png" width="5%" height="5%">
-        </a>
-        
-        <a href="#">
-          <img src="../logos/armm.png" width="5%" height="5%">
-        </a>
-        
-        <a href="#">
-          <img src="../logos/region-12.png" width="5%" height="5%">
-        </a>
-        
-        <a href="#">
-          <img src="../logos/rhrdcxi.png" width="5%" height="5%">
-        </a>
-        
-        <a href="#">
-          <img src="../logos/norminchord.png" width="5%" height="5%">
-        </a>
-        
-        <a href="#">
-          <img src="../logos/zrhrdc.png" width="5%" height="5%">
-        </a>
-        
-        <a href="#">
-          <img src="../logos/evhrdc.png" width="5%" height="5%">
-        </a>
-        
-        <a href="#">
-          <img src="../logos/region-7.png" width="5%" height="5%">
-        </a>
-        
-        <a href="#">
-          <img src="../logos/region-6.png" width="5%" height="5%">    
-        </a>
-        
-        <a href="#">
-          <img src="../logos/region-5.png" width="5%" height="5%">      
-        </a>
-        
-        <a href="#">
-          <img src="../logos/mhrdc.png" width="5%" height="5%">    
-        </a>
-        
-        <a href="#">
-          <img src="../logos/region4-a.png" width="5%" height="5%">
-        </a>
-        
-        <a href="#">
-          <img src="../logos/clhrdc.png" width="7%" height="7%">    
-        </a>
-        
-        <a href="#">
-          <img src="../logos/cvhrdc.png" width="5%" height="5%"> 
-        </a>
-        
-        <a href="#">
-          <img src="../logos/r1hrdc.png" width="5%" height="5%">
-        </a>
-        
-        <a href="#">
-          <img src="../logos/crhrdc.png" width="5%" height="5%">   
-        </a>  
-      </div>
     </footer>
+    <!--END OF FOOTER-->
   </body>
-</html>
-
-<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
-<script>
-		bulmaCarousel.attach('#carousel-demo', {
-			slidesToScroll: 1,
-			slidesToShow: 4
-		});
-</script>
+</html> 
