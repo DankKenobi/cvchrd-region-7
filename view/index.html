@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
 
 
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -23,7 +25,8 @@
           <img src = "../logos/CVCHRD logo.png" width="90%" height="90%">
         </div>
         <div class = "column is-gapless">
-          <h1 class = "title is-3"> Region 7 Health Research </h1>
+          <p class = "title is-3"> CVCHRD </p>
+          <p class = "subtitle is-6"> Central Visayas Consortium for Health Research and Development </p>
           <!-- NAVIGATION BAR -->
           <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
@@ -88,12 +91,18 @@
     </div>
 
     <div class = "container">
-      <strong> Latest News </strong>
+      <strong> Carousel </strong>
     </div>
     
     <hr>
     <div class = "container">
-        <strong> Events </strong>
+      <strong> CVCHRD AT A GLANCE </strong>
+    </div>
+
+    <hr>
+
+    <div class = "container">
+      <strong> Our Latest News </strong>
     </div>
       
     <hr>
@@ -227,3 +236,11 @@
     </footer>
   </body>
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+<script>
+		bulmaCarousel.attach('#carousel-demo', {
+			slidesToScroll: 1,
+			slidesToShow: 4
+		});
+</script>
