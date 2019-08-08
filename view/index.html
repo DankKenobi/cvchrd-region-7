@@ -7,148 +7,270 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
     <!-- <link rel="stylesheet" href="/style/debugger.css"> -->
     <link rel="stylesheet" href="/style/main.css"> 
-
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
   <body>
     <!-- START OF NAVBAR-->
-      <nav class="navbar mainColor" role="navigation" aria-label="main navigation">
-          <div class="navbar-brand">
-              <a href="/">
-                  <img src = "../logos/CVCHRD logo.png" width="100" height="100">
-              </a>
-              <div class="column">
-                  <p class="has-text-white font">CVCHRD</p>
-                  <p class="has-text-white ">Central Visayas Consurtiom for</p>  
-                  <p class="has-text-white">Health Research And Development</p>  
-              </div>
-          </div>
-
-          <div id="navbarBasicExample" class="navbar-menu">
-              <div class="navbar-end">
-                  <a href="../view/index.html" class="navbar-item has-text-white ">Home</a>
-                  <div class="navbar-item has-dropdown is-hoverable ">
-                          <a class="navbar-link has-text-white ">
-                              About Us
-                          </a>
-                      <div class="navbar-dropdown">
-                          <a class="navbar-item" href="../view/aboutpage/history.html">
-                              History of CVCHRD
-                          </a>
-                          <a class="navbar-item" href="../view/aboutpage/orgchart.html">
-                              Organizational Chart
-                          </a>
-                          <a class="navbar-item" href="../view/aboutpage/NDO.html">
-                              Name, Domicile, and Objectives
-                          </a>
-                          <a class="navbar-item" href="../view/aboutpage/memberInt.html">
-                              Member Institutions
-                          </a>
-                      </div>
-                  </div>
-                  <a href="../view/gallery.html" class="navbar-item has-text-white">Gallery</a>
-                  <a href="../view/downloads.html" class="navbar-item has-text-white">Downloads</a>
-                              <input class="input is-rounded" type="text" placeholder="Search ...">
-                          </div>
-                          <div class="control">
-                              <a class="button is-info is-rounded">
-                              Search
-                              </a>
-                          </div>
-                      </div>
-                  </a>
-              </div>
-      </nav>
-      <!--END OF NAVBAR-->
-
-      <section class="section">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-one-third">
-                  <article class="media">
-                    <figure class="media-left">
-                        <i class="fas fa-globe-asia icon is-large"></i>
-                    </figure>
-                   <div class="media-content">
-                     <div class="content">
-                       <p class="is-size-4">Regional Health Research Development Committee</p>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                     </div>
-                   </div>
-                  </article>
-                </div>
-              </div>
+    <nav class="navbar mainColor" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a href="/">
+                <img src = "../logos/CVCHRD logo.png" width="100" height="100">
+            </a>
+            <div class="column">
+                <p class="has-text-white font">CVCHRD</p>
+                <p class="has-text-white ">Central Visayas Consurtiom for</p>  
+                <p class="has-text-white">Health Research And Development</p>  
+            </div>
         </div>
-        </section>
-      <div class="container">
-        <!--START OF NEWS-->
-          <div class = "container has-text-centered is-size-5 headerpadd">
-                  <strong>  OUR LATEST NEWS </strong>
-          </div>
-          <br>
 
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a href="../view/index.html" class="navbar-item has-text-white ">Home</a>
+                <div class="navbar-item has-dropdown is-hoverable ">
+                        <a class="navbar-link has-text-white ">
+                            About Us
+                        </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="../view/aboutpage/history.html">
+                            History of CVCHRD
+                        </a>
+                        <a class="navbar-item" href="../view/aboutpage/orgchart.html">
+                            Organizational Chart
+                        </a>
+                        <a class="navbar-item" href="../view/aboutpage/NDO.html">
+                            Name, Domicile, and Objectives
+                        </a>
+                        <a class="navbar-item" href="../view/aboutpage/memberInt.html">
+                            Member Institutions
+                        </a>
+                    </div>
+                </div>
+                <a href="../view/gallery.html" class="navbar-item has-text-white">Gallery</a>
+                <a href="../view/downloads.html" class="navbar-item has-text-white">Downloads</a>
+                <a href="../view/discussion.html" class="navbar-item has-text-white">Discussions</a>
+                <a>
+                    <div class="navbar-item">
+                        <div class="control">
+                            <input class="input is-rounded" type="text" placeholder="Search ...">
+                        </div>
+                        <div class="control">
+                            <a class="button is-info is-rounded">
+                            Search
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    </nav>
+    <!--END OF NAVBAR-->
+
+    <!--START OF CAROUSEL-->
+    <section class="hero is-medium has-carousel">
+     
+        <div id="carousel-demo" class="carousel ">
+          
+          <div class="item">
+            <figure class="image is-16by9">
+                <img src="https://images.unsplash.com/photo-1484583066749-c2129489f52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1490&q=80" alt="" srcset="">
+            </figure>
+            <div class="text">Lorem Ipsum</div>
+          </div>
+          <div class="item">
+              <figure class="image is-16by9">
+                  <img src="https://images.unsplash.com/photo-1477332552946-cfb384aeaf1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="" srcset="">
+              </figure>
+              <div class="text">Lorem Ipsum</div>
+          </div>
+          <div class="item">
+              <figure class="image is-16by9">
+                  <img src="https://images.unsplash.com/photo-1486218119243-13883505764c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80" alt="" srcset="">
+              </figure>
+              <div class="text">Lorem Ipsum</div>
+          </div>
+          <div class="item">
+              <figure class="image is-16by9">
+                  <img src="https://images.unsplash.com/photo-1484583066749-c2129489f52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1490&q=80" alt="" srcset="">
+              </figure>
+              <div class="text">Lorem Ipsum</div>
+          </div>
+          <div class="item">
+              <figure class="image is-16by9">
+                  <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1335&q=80" alt="" srcset="">
+              </figure>
+              <div class="text">Lorem Ipsum</div>
+          </div>
+        </div>
+    </section>
+    <!--END OF CAROUSEL-->
+
+    <section class="section">
+        <div class = "has-text-centered is-size-5 ">
+            <strong class="titleColor font">  CVCHRD AT A GLANCE </strong>
+      </div>
+      <br>
+      <div class="columns">
+        <div class="column is-one-third">
+          <article class="media">
+            <figure class="media-left">
+              <p class="image is-96x96">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrYTWymFfDjkJFYWdYUP12tI8f8x0xukmQKugauBiv6v6wG_Yp" alt="Philippine Map" srcset="">
+              </p>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <strong class="titleColor is-size-5"> Philippine Council for Health Research and Development</strong>
+                <p>Establishing mechanism to strengthen health research capabilities</p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="column is-one-third">
+          <article class="media">
+            <figure class="media-left">
+              <p class="image is-96x96">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrYTWymFfDjkJFYWdYUP12tI8f8x0xukmQKugauBiv6v6wG_Yp" alt="Philippine Map" srcset="">
+              </p>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <strong class="titleColor is-size-5"> Securities and Exchange Commission</strong>
+                <br>
+                <br>
+                <p>Generate funds/resources for the implementation of its health R & D activities</p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="column is-one-third">
+          <article class="media">
+            <figure class="media-left">
+              <p class="image is-96x96">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrYTWymFfDjkJFYWdYUP12tI8f8x0xukmQKugauBiv6v6wG_Yp" alt="Philippine Map" srcset="">
+              </p>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <strong class="titleColor is-size-5"> Philippine National Health Research System</strong>
+                <br>
+                <br>
+                <p>Integrated national framework for health research in the country</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!--END OF CVCHRD AT A GLANCE-->
+
+      <!--START OF -->
+    <section class="section mainColor">
+      <div class="container">
           <div class="columns">
-              <div class="column is-one-third">
-                      <div class="card">
-                              <div class="card-image">
-                                <figure class="image is-4by3">
-                                  <img src="https://images.unsplash.com/photo-1546659934-038aab8f3f3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=817&q=80" alt="Placeholder image">
-                                </figure>
+              <div class="column is-half">
+                <article class="media">
+                  <figure class="media-left">
+                      <i class="fas fa-globe-asia icon is-large has-text-white"></i>
+                  </figure>
+                  <div class="media-content">
+                    <div class="content">
+                      <p class="is-size-4 has-text-white">Regional Health Research Development Committee</p>
+                      <p class="has-text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="column is-half">
+                <article class="media">
+                  <figure class="media-left">
+                      <i class="fas fa-globe-asia icon is-large has-text-white"></i>
+                  </figure>
+                  <div class="media-content">
+                    <div class="content">
+                      <p class="is-size-4 has-text-white">Regional Health Research Development Committee</p>
+                      <p class="has-text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+      </div>
+    </section>
+    <!--END OF -->
+
+
+    <!--START OF NEWS-->
+    <div class="container">
+      
+        <div class = "container has-text-centered is-size-5 headerpadd">
+                <strong>  OUR LATEST NEWS </strong>
+        </div>
+        <br>
+
+        <div class="columns">
+            <div class="column is-one-third">
+                    <div class="card">
+                            <div class="card-image">
+                              <figure class="image is-4by3">
+                                <img src="https://images.unsplash.com/photo-1546659934-038aab8f3f3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=817&q=80" alt="Placeholder image">
+                              </figure>
+                            </div>
+                            <div class="card-content">
+                              <p class="title is-4 titleColor">John Smith</p>
+                              <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                              <br>
+                              <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                
                               </div>
-                              <div class="card-content">
+                            </div>
+                    </div>
+            </div>
+            <div class="column is-one-third">
+                    <div class="card">
+                            <div class="card-image">
+                              <figure class="image is-4by3">
+                                <img src="https://images.unsplash.com/photo-1486218119243-13883505764c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80" alt="Placeholder image">
+                              </figure>
+                            </div>
+                            <div class="card-content">
                                 <p class="title is-4 titleColor">John Smith</p>
                                 <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
                                 <br>
-                                <div class="content">
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                  
-                                </div>
+                              <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                <a href="#">#css</a> <a href="#">#responsive</a>
                               </div>
-                      </div>
-              </div>
-              <div class="column is-one-third">
-                      <div class="card">
-                              <div class="card-image">
-                                <figure class="image is-4by3">
-                                  <img src="https://images.unsplash.com/photo-1486218119243-13883505764c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80" alt="Placeholder image">
-                                </figure>
+                            </div>
+                    </div>
+            </div>
+            <div class="column is-one-third">
+                    <div class="card">
+                            <div class="card-image">
+                              <figure class="image is-4by3">
+                                <img src="https://images.unsplash.com/photo-1549890762-0a3f8933bc76?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1435&q=80" alt="Placeholder image">
+                              </figure>
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-4 titleColor">John Smith</p>
+                                <p>11:09 PM - 1 Jan 2016</p>
+                              <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Phasellus nec iaculis mauris. <a>@bulmaio</a>
                               </div>
-                              <div class="card-content">
-                                  <p class="title is-4 titleColor">John Smith</p>
-                                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                                  <br>
-                                <div class="content">
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                  <a href="#">#css</a> <a href="#">#responsive</a>
-                                </div>
-                              </div>
-                      </div>
-              </div>
-              <div class="column is-one-third">
-                      <div class="card">
-                              <div class="card-image">
-                                <figure class="image is-4by3">
-                                  <img src="https://images.unsplash.com/photo-1549890762-0a3f8933bc76?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1435&q=80" alt="Placeholder image">
-                                </figure>
-                              </div>
-                              <div class="card-content">
-                                  <p class="title is-4 titleColor">John Smith</p>
-                                  <p>11:09 PM - 1 Jan 2016</p>
-                                <div class="content">
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Phasellus nec iaculis mauris. <a>@bulmaio</a>
-                                </div>
-                              </div>
-                      </div>
-              </div>
-          </div>
-  </div>
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </div>
   <br>
-
+  <hr>
   <!--END OF NEWS-->
 
   <!-- START OF AFFILIATED RESEARCH SITES -->
@@ -225,6 +347,7 @@
       <img src = "/logos/zrhrdc.png" width="5%" height="5%">
     </a>
   </div>
+  <br>
 
   <!-- END OF AFFILIATED RESEARCH SITES -->
 
@@ -288,5 +411,14 @@
         </div>
     </footer>
     <!--END OF FOOTER-->
+    <script>
+        bulmaCarousel.attach('#carousel-demo', {
+          // slidesToScroll: 1,
+          slidesToShow: 2,
+          wrapperWidth: 12,
+          containerWidth: 13,
+          infinite: true
+        });
+      </script>
   </body>
 </html> 
